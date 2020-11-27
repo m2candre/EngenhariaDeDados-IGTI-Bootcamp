@@ -1,11 +1,15 @@
 ## Engenharia de Dados - IGTI - Bootcamp
 
-* Módulo 1
+### Cronograma do BootCamp
 
-* Módulo 2
+* Modulo 01: Introdução
 
-* Módulo 3
+* Modulo 02: Fundamentos
 
-* Módulo 4
+* Módulo 03: Armazenamento de Dados
 
-* Módulo 5
+* Módulo 04: Solução de dados utilizando o Ecossistema Hadoop
+
+* Módulo 05: Infraestrutura de dados e arquitetura escalável
+
+#### Desafio Final
