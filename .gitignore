@@ -1,6 +1,9 @@
 # Marcos André - Ignorando pasta com os dowloads externos
 enade2019/
 DadosEnem2019/
+*.txt
+*.json
+
 
 
 # Created by https://www.toptal.com/developers/gitignore/api/python,pycharm,visualstudiocode,jupyternotebooks

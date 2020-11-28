@@ -10,13 +10,12 @@ access_token_secret = "MPvwLKlV4Z5MoanxivPpZvpSHPpRbN6hkdKBygp3APxeh"
 
 # Arquivo de saída com os Tweets
 data_hoje = datetime.now().strftime("%Y-%m-%d-%H-%M-%S")
-out = open(f"collected_tweets{}.txt", "w")
+out = open(f"collected_tweets{data_hoje}.txt", "w")
 
 # Conexão com Tweets
 class MyListener(StreamListener):
 
     def on_data(self, data):
-       print(data)
        itemString = json.dumps(data)
        out.write(itemString + "\n")
        return True
@@ -26,4 +25,8 @@ class MyListener(StreamListener):
 
 if __name__ == "__main__":
     l = MyListener()
-    auth = O
+    auth = OAuthHandler(consumer_key, consumer_secret)
+    auth.set_access_token(access_token, access_token_secret)
+
+    stream = Stream(auth, l)
+    stream.filter(track=["Trump"])
