@@ -3,7 +3,7 @@ enade2019/
 DadosEnem2019/
 *.txt
 *.json
-
+config.py
 
 
 # Created by https://www.toptal.com/developers/gitignore/api/python,pycharm,visualstudiocode,jupyternotebooks
